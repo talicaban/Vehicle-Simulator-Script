@@ -1,0 +1,51 @@
+print(
+"@Talicaban's script loaded!" .. "\n            Roblox version: " .. version()
+)
+
+
+
+
+YOURNAME = YOURNAME
+
+TORQUE = TORQUE
+
+DOWNFORCE = DOWNFORCE
+
+MAXSPEED = MAXSPEED
+
+
+
+
+while task.wait(2.5) do
+
+local vehicles = workspace.Vehicles:GetChildren()
+
+local function checkforcar(result)
+	return result
+end
+
+for i,v in pairs(vehicles) do
+if v.Name == "Ford Crown Victoria" or v.Name == "Lamborghini Huracan" or v.Name == "Serene Galapagos GT" or v.Name == "Tesla Roadster 2.0" then
+	continue
+end
+if v:IsA("Model") then
+	if v.owner.Value == YOURNAME then
+		if checkforcar(true) then
+			v.Handling.Braking.Value = 120500
+			v.Handling.Gears.Value = 6
+			v.Handling.MaxSpeed.Value = MAXSPEED
+			v.Handling.Torque.Value = TORQUE
+			v.Handling.FrontWheelDrive.Value = true
+				v.Handling.FrontWheelDrive.Force.Value = 5555
+			v.Handling.RearWheelDrive.Value = true
+				v.Handling.RearWheelDrive.Force.Value = 8700
+			v.Handling.FrictionRoad.Value = 2
+			v.Handling.DownForceMultiple.Value = DOWNFORCE
+		else
+			error[[Script encountered an error. (re-execution need)]]
+		end
+	end
+end
+end
+
+end
