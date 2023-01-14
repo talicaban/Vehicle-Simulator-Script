@@ -3,7 +3,7 @@ print(
 )
 
 
-
+BRAKE = BRAKE
 
 YOURNAME = YOURNAME
 
@@ -31,7 +31,7 @@ end
 if v:IsA("Model") then
 	if v.owner.Value == YOURNAME then
 		if checkforcar(true) then
-			v.Handling.Braking.Value = 120500
+			v.Handling.Braking.Value = BRAKE
 			v.Handling.Gears.Value = 6
 			v.Handling.MaxSpeed.Value = MAXSPEED
 			v.Handling.Torque.Value = TORQUE
