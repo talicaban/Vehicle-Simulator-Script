@@ -7,6 +7,8 @@ BRAKE = BRAKE
 
 YOURNAME = YOURNAME
 
+GEAR = GEAR
+
 TORQUE = TORQUE
 
 DOWNFORCE = DOWNFORCE
@@ -32,11 +34,11 @@ if v:IsA("Model") then
 	if v.owner.Value == YOURNAME then
 		if checkforcar(true) then
 			v.Handling.Braking.Value = BRAKE
-			v.Handling.Gears.Value = 6
+			v.Handling.Gears.Value = GEAR
 			v.Handling.MaxSpeed.Value = MAXSPEED
 			v.Handling.Torque.Value = TORQUE
 			v.Handling.FrontWheelDrive.Value = true
-				v.Handling.FrontWheelDrive.Force.Value = 5555
+				v.Handling.FrontWheelDrive.Force.Value = 6755
 			v.Handling.RearWheelDrive.Value = true
 				v.Handling.RearWheelDrive.Force.Value = 8700
 			v.Handling.FrictionRoad.Value = 2
