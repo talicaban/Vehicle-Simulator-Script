@@ -1,5 +1,7 @@
 print(
-"@Talicaban's script loaded!" .. " v" .. "2", .. "\n            Roblox version: " .. version()
+"@Talicaban's script loaded!", 
+" v" .. "2",
+"\n            Roblox version: " .. version()
 )
 
 
