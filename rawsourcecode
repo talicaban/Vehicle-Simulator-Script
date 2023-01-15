@@ -5,7 +5,7 @@ print(
 
 BRAKE = BRAKE
 
-YOURNAME = YOURNAME
+YOURNAME = game.Players.LocalPlayer.Character.Name
 
 GEAR = GEAR
 
